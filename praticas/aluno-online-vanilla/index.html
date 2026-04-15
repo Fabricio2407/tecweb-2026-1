@@ -2,52 +2,54 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
+    <title>Aluno Online | Login</title>
   </head>
   <body>
-    <script type="module" src="/src/main.js"></script>
-    <aside>
-      <img src="public/avatar.svg" alt="avatar">
-      <h1>Aluno Online</h1>
-      <ul>
-        <li><a href="#Dashboard">Dashboard</a></li>
-        <li><a href="#Notas">Notas</a></li>
-        <li><a href="#Faltas">Faltas</a></li>
-        <li><a href="#Boletos">Boletos</a></li>
-        <li><a href="#Requerimentos">Requerimentos</a></li>
-        <li><a href="#Sair">Sair</a></li>
-      </ul>
-    </aside>
-    <main>
-      <h1> Olá, Aluno!</h1>
-      <img src="public/learn.svg" alt="avatar">
-      <h2>Bem-vindo ao portal do aluno</h2>
-      <section>
-        <h3>Mural de Avisos</h3>
-        <ul>
-          <li> Inscrição para o projeto de extensão</li>
-          <li> Eleição para representante de turma</li>
-        </ul>
-      </section>
-      <section>
-      <h3>calendario</h3>
-        <ul>
-          <li> 23/02 - Inicio do período letivo 2026-1</li>
-          <li> 25/04 - Prazo final para aplicação da P1</li>
-          <li> 23/06 - Prazo final para aplicação da P2</li>
-          <li> 04/07 - Fim do período letivo 2026-1</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Minhas Disciplinas</h3>
-        <ul>
-          <li> Banco de Dados 1 (HMDC253)</li>
-          <li> Estrutura de Dados (MDC175)</li>
-          <li> Tecnologia Web (HMDC251)</li>
-        </ul>
+    <main class="page-content">
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="login-header">
+          <p class="login-eyebrow">Aluno Online</p>
+          <h1 id="login-title">Acesse sua conta</h1>
+          <p class="login-description">
+            Entre com seu email e sua senha para continuar.
+          </p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="seuemail@exemplo.com"
+              autocomplete="email"
+            />
+            <p id="email-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Senha</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+            />
+            <p id="password-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <button type="submit">Entrar</button>
+        </form>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Aluno Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
