@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+  display: flex;
+}
+
+.principal h1 {
+  margin-left: 20px;
+}
+
+.secundario {
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+
+#caixa {
+  border-radius: 20px;
+  border: 2px solid #f0f0f0;
+  margin: 20px;
+  overflow: hidden; 
+}
+
+h3 {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 10px 16px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+#caixa ul {
+  margin: 0;
+  padding: 10px 16px 16px;
+}
+
+aside{
+    background-color: #f0f0f0;
+    width: 20%;
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+/*
+tela de celular
+*/
+
+@media (width <= 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    .secundario {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .secundario img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .principal {
+        font-size: 20px;
+    }
+
+    .link {
+        font-size: 20px;
+    }
+
+    aside {
+        width: 100%;
+        order: 1;
+        padding: 30px;
+        
+    }
+
+    main {
+        width: 100%;
+        order: 2;
+    }
+}
