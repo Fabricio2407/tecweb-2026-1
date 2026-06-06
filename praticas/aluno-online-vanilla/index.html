@@ -2,11 +2,54 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
+    <title>Aluno Online | Login</title>
   </head>
   <body>
+    <main class="page-content">
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="login-header">
+          <p class="login-eyebrow">Aluno Online</p>
+          <h1 id="login-title">Acesse sua conta</h1>
+          <p class="login-description">
+            Entre com seu email e sua senha para continuar.
+          </p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="seuemail@exemplo.com"
+              autocomplete="email"
+            />
+            <p id="email-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Senha</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+            />
+            <p id="password-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <button type="submit">Entrar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Aluno Online. Todos os direitos reservados.</p>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
