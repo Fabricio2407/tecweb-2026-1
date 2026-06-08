@@ -1,0 +1,26 @@
+.dashboard-card {
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.dashboard-card h3 {
+  padding: 14px 18px;
+  background: var(--color-header);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.dashboard-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px 22px 20px 36px;
+}
+
+.dashboard-card li {
+  color: var(--color-muted);
+  line-height: 1.45;
+}
